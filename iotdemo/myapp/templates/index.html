@@ -1,0 +1,16 @@
+<html>
+<head>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" >
+</head>
+<body>
+<h1 align="center" >Let's connect world with IOT.</h1>
+
+<div align="center">
+<table border="1">
+<tr> <td> <b>Node Name </b></td><td> <b>Status </b></td><td> <b>Action </b></td></tr>
+<tr><td> Tube Light </td><td> {{ status }}</td><td><a href="http://13.127.242.4:8080/pubon" >ON </a> or <a href="http://13.127.242.4:8080/puboff" > OFF </a></td> </tr>
+</table>
+</div>
+</body>
+</html>
